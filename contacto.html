@@ -1,0 +1,45 @@
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-delay="300">
+        <form id="contact" action="contact.php" role="form" method="post" class="php-email-form">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Tu Nombre" data-rule="minlen:4"
+              minlength="4" data-msg="Por favor ingresa un nombre de 4 o más caracteres"
+              oninvalid="this.setCustomValidity('Ingresa un nombre de 4 o más caracteres')"
+              oninput="setCustomValidity('')" required />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control" name="email" id="email" minlength="4" placeholder="Tu Email"
+              data-rule="email" data-msg="Por favor ingresa un mail válido"
+              oninvalid="this.setCustomValidity('Por favor ingresa un mail válido')" oninput="setCustomValidity('')"
+              required />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="subject" id="subject" placeholder="Asunto"
+              data-rule="minlen:4" minlength="4" data-msg="Por favor ingresa un Asunto de 8 o más caracteres"
+              oninvalid="this.setCustomValidity('Por favor ingresa un Asunto de 4 o más caracteres')"
+              oninput="setCustomValidity('')" required />
+            <div class="validate"></div>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="message" rows="5" data-rule="required" minlength="4"
+              data-msg="Por favor escribe un mensaje para nosotros." placeholder="Mensaje"
+              oninvalid="this.setCustomValidity('Por favor ingresa un Mensaje de 8 o más caracteres')"
+              oninput="setCustomValidity('')" required></textarea>
+            <div class="validate"></div>
+          </div>
+          <div class="mb-3">
+            <div class="loading">Cargando</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Tu mensaje se ha enviado. Muchas Gracias</div>
+          </div>
+          <div class="text-center"><button name="submit" type="submit">Enviar Mensaje</button></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section><!-- End Contact Section -->
